@@ -10,7 +10,7 @@ import (
 func main() {
 	r := http.NewServeMux()
 	r.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello From Go!")
+		fmt.Fprintf(w, "Hello From Golang!")
 	})
 	s := &http.Server{
 		Addr:        ":8080",
